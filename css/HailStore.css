@@ -1,0 +1,600 @@
+/* ======================================== */
+/* =     HailStore Stylesheet             = */
+/* = © 2015 Joseph Shenton (TeamiHackify) = */
+/* =       All Rights reserved.           = */
+/* ======================================== */
+
+#fade p {
+    animation: fadein 5s;
+    -moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari and Chrome */
+    -o-animation: fadein 5s; /* Opera */
+}
+#fade ul {
+    animation: fadein 5s;
+    -moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari and Chrome */
+    -o-animation: fadein 5s; /* Opera */
+}
+#fade img {
+    animation: fadein 5s;
+    -moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari and Chrome */
+    -o-animation: fadein 5s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:3;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:3;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:3;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 3;
+    }
+}
+
+
+*:not(input):not(textarea) {
+  -webkit-user-select: none;
+}
+body {
+  background: #000;
+}
+.view-main {
+  background: url() no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -webkit-transform: translate3d(0, 0, 0) scale(1);
+  -moz-transform: translate3d(0, 0, 0) scale(1);
+  -ms-transform: translate3d(0, 0, 0) scale(1);
+  -o-transform: translate3d(0, 0, 0) scale(1);
+  transform: translate3d(0, 0, 0) scale(1);
+  -webkit-transition-duration: 400ms;
+  -moz-transition-duration: 400ms;
+  -ms-transition-duration: 400ms;
+  -o-transition-duration: 400ms;
+  transition-duration: 400ms;
+}
+
+.tab-bar
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+  align-items: left:    
+}
+.swiper-custom {
+  position:relative;
+  height:100%;
+}
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: none;
+  border:1px solid #aaa;
+  border-radius: 0 0 0 0;
+  opacity:1;
+  cursor: pointer;
+}
+.swiper-pagination-bullet-active {
+  background: transparent;
+  border-color: #007aff;
+} 
+
+.swiper-slide {
+  	background: ;
+}
+.swiper-slide span {
+  text-align:center;
+  display:block;
+  margin: 0px;
+  font-size:15px;
+  color: #ffdd00;
+}
+.swiper-container {
+  height: 200px;
+  margin: 35px 0;
+}
+.swiper-custom1 {
+  position:relative;
+  height:100%;
+}
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: none;
+  border:1px solid #aaa;
+  border-radius: 0 0 0 0;
+  opacity:1;
+  cursor: pointer;
+}
+.swiper-pagination-bullet-active {
+  background: transparent;
+  border-color: #007aff;
+} 
+
+.swiper-slide1 {
+    background: ;
+}
+.swiper-slide1 span {
+  text-align:center;
+  display:block;
+  margin: 0px;
+  font-size:15px;
+  color: #ffdd00;
+}
+.swiper-container1 {
+  height: 45px;
+  margin: 35px 0;
+}
+.button{
+  margin-top:10px;
+}
+.get{    
+  margin-top: -40px;
+    float: right;
+}
+.install{    
+  margin-top: 0px;
+}
+@font-face {
+  font-family: Head;
+src: url(../Steinerlight.ttf);
+}
+
+@font-face {
+  font-family: Head;
+src: url(../Steinerlight.ttf);
+}
+
+@font-face {
+  font-family: Head;
+src: url(../Steinerlight.ttf);
+}
+
+@font-face {
+  font-family: Head;
+src: url(../Steinerlight.ttf);
+}
+
+@font-face {
+  font-family: Head;
+src: url(../Steinerlight.ttf);
+}
+
+@font-face {
+  font-family: Head;
+src: url(../Steinerlight.ttf);
+}
+
+@font-face {
+  font-family: Head;
+src: url(../Steinerlight.ttf);
+}
+
+@font-face {
+  font-family: Head;
+src: url(../Steinerlight.ttf);
+}
+
+@font-face {
+  font-family: Head;
+src: url(../Steinerlight.ttf));
+}
+
+@font-face {
+  font-family: Head;
+src: url(../Steinerlight.ttf);
+}
+
+@font-face {
+  font-family: Head;
+src: url(../Steinerlight.ttf);
+}
+
+@font-face {
+  font-family: Head;
+src: url(../Steinerlight.ttf);
+}
+
+
+
+
+@font-face {
+  font-family: Body;
+src: url(../Desdemona.ttf);
+}
+
+@font-face {
+  font-family: Body;
+src: url(../Desdemona.ttf);
+}
+
+@font-face {
+  font-family: Body;
+src: url(../Desdemona.ttf);
+}
+
+@font-face {
+  font-family: Body;
+src: url(../Desdemona.ttf);
+}
+
+@font-face {
+  font-family: Body;
+src: url(../Desdemona.ttf);
+}
+
+@font-face {
+  font-family: Body;
+src: url(../Desdemona.ttf);
+}
+
+@font-face {
+  font-family: Body;
+src: url(../Desdemona.ttf);
+}
+
+@font-face {
+  font-family: Body;
+src: url(../Desdemona.ttf);
+}
+
+@font-face {
+  font-family: Body;
+src: url(../Desdemona.ttf));
+}
+
+@font-face {
+  font-family: Body;
+src: url(../Desdemona.ttf);
+}
+
+@font-face {
+  font-family: Body;
+src: url(../Desdemona.ttf);
+}
+
+@font-face {
+  font-family: Body;
+src: url(../Desdemona.ttf);
+}
+
+
+
+
+@font-face {
+  font-family: Sub;
+src: url(../Jellyka.ttf);
+}
+
+@font-face {
+  font-family: Sub;
+src: url(../Jellyka.ttf);
+}
+
+@font-face {
+  font-family: Sub;
+src: url(../Jellyka.ttf);
+}
+
+@font-face {
+  font-family: Sub;
+src: url(../Jellyka.ttf);
+}
+
+@font-face {
+  font-family: Sub;
+src: url(../Jellyka.ttf);
+}
+
+@font-face {
+  font-family: Sub;
+src: url(../Jellyka.ttf);
+}
+
+@font-face {
+  font-family: Sub;
+src: url(../Jellyka.ttf);
+}
+
+@font-face {
+  font-family: Sub;
+src: url(../Jellyka.ttf);
+}
+
+@font-face {
+  font-family: Sub;
+src: url(../Jellyka.ttf);
+}
+
+@font-face {
+  font-family: Sub;
+src: url(../Jellyka.ttf);
+}
+
+@font-face {
+  font-family: Sub;
+src: url(../Jellyka.ttf);
+}
+
+@font-face {
+  font-family: Sub;
+src: url(../Jellyka.ttf);
+}
+
+
+@media all and (min-width: 768px) {
+  .content-block.tablet-inset {
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 7px;
+  }
+  .content-block.tablet-inset .content-block.tablet-inset .content-block-inner {
+    border: none;
+    border-radius: 7px;
+  }
+  .list-block.tablet-inset {
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 7px;
+  }
+  .list-block.tablet-inset .content-block-title {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .list-block.tablet-inset ul {
+    border-radius: 7px;
+    border-top: none;
+    border-bottom: none;
+  }
+  .list-block.tablet-inset li:first-child {
+    border-radius: 7px 7px 0 0;
+  }
+  .list-block.tablet-inset li:last-child {
+    border-radius: 0 0 7px 7px;
+  }
+  .list-block.tablet-inset li:first-child:last-child {
+    border-radius: 7px;
+  }
+  .list-block.tablet-inset li:first-child label.label-checkbox:active,
+  .list-block.tablet-inset li:first-child label.label-radio:active {
+    border-radius: 7px 7px 0 0;
+  }
+  .list-block.tablet-inset li:last-child label.label-checkbox:active,
+  .list-block.tablet-inset li:last-child label.label-radio:active {
+    border-radius: 0 0 7px 7px;
+  }
+}
+/* === iOS 8 specific section === */
+@media all and (max-width: 767px) {
+  body.ios8 {
+    padding-top: 0 !important;
+  }
+  body.ios8 .views {
+    transition: transform: 400ms ease;
+    -webkit-transition: -webkit-transform 400ms ease;
+  }
+  body.ios8 .views.popup-compose {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+  }
+  body.ios8 div.statusbar-overlay {
+    display: none;
+  }
+  body.ios8 .navbar {
+    height: 64px;
+  }
+  body.ios8 .navbar.fixed-size {
+    height: 44px !important;
+  }
+  body.ios8 .navbar .navbar-inner {
+    padding-top: 20px;
+  }
+  body.ios8 .navbar.fixed-size .navbar-inner {
+    padding-top: 0;
+  }
+  body.ios8 .navbar-through .page-content {
+    padding-top: 64px;
+  }
+  body.ios8 .popup.modal-in {
+    transform: translate3d(0, -20px, 0);
+    -webkit-transform: translate3d(0, -20px, 0);
+    height: 100%;
+  }
+  body.ios8 .popup.popup-submit.modal-in {
+    transform: translate3d(0, 24px, 0);
+    -webkit-transform: translate3d(0, 24px, 0);
+  }
+  body.ios8 .popup.popup-submit .page-content {
+    padding-top: 44px;
+  }
+  body.ios8 .popup:not(.popup-submit) .page {
+    padding-top: 20px;
+  }
+}
+body.ios8 .list-block .swipeout-actions-inner a {
+  min-width: 80px;
+  text-align: center;
+  padding: 0;
+  display: block;
+  box-align: stretch;
+  align-items: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-transition: -webkit-transform 300ms ease;
+}
+body.ios8 .list-block .swipeout-actions-inner a div {
+  -webkit-transition: -webkit-transform 300ms ease !important;
+}
+body.ios8 .list-block .swipeout-actions-inner a.no-transition {
+  transition: none;
+  -webkit-transition: none;
+}
+body.ios8 .list-block .swipeout-actions-inner a.swipeout-open {
+  -webkit-transform: translate3d(0,0,0);
+}
+body.ios8 .list-block .swipeout-actions-inner a::after,
+body.ios8 .list-block .swipeout-actions-inner a div::after {
+  content: " ";
+  height: 100%;
+  width: 500%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+}
+body.ios8 .list-block .swipeout-actions-inner a div::after {
+  left: 100%;
+}
+body.ios8 .list-block .swipeout-actions-inner a.red::after,
+body.ios8 .list-block .swipeout-actions-inner a.red div::after,
+body.ios8 .list-block .swipeout-actions-inner a.red div {
+  background-color: #ff3b30;
+}
+body.ios8 .list-block .swipeout-actions-inner a.orange::after,
+body.ios8 .list-block .swipeout-actions-inner a.orange div::after,
+body.ios8 .list-block .swipeout-actions-inner a.orange div {
+  background-color: #ff8810;
+}
+body.ios8 .list-block .swipeout-actions-inner a.gray::after,
+body.ios8 .list-block .swipeout-actions-inner a.gray div::after,
+body.ios8 .list-block .swipeout-actions-inner a.gray div {
+  background-color: #c0bfc5;
+}
+body.ios8 .list-block .swipeout-actions-inner a.blue::after,
+body.ios8 .list-block .swipeout-actions-inner a.blue div::after,
+body.ios8 .list-block .swipeout-actions-inner a.blue div {
+  background-color: #007aff;
+}
+body.ios8 .list-block .swipeout-actions-inner a.transition-to-open {
+  -webkit-transition: -webkit-transform 300ms ease;
+  -webkit-transform: translate3d(0,0,0) !important;
+}
+/* === iOS 8 specific section END === */
+.content-block.inset {
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 7px;
+}
+.content-block.inset .content-block-inner {
+  border: none;
+  border-radius: 7px;
+}
+.page-content {
+  margin-bottom: 1px;
+}
+.page {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.popup-getting-started a.link {
+  -webkit-transition: opacity 300ms;
+}
+.popup-getting-started a.link:active {
+  opacity: 0.3;
+  -webkit-transition-duration: 0;
+}
+div.page-content .bug-no-bg:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/bug_1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 120px 131px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: -1;
+}
+@media all and (-webkit-min-device-pixel-ratio: 2) {
+  div.page-content .bug-no-bg:before {
+    background-image: url("../img/bug_1@2x.png");
+  }
+}
+div.page-content .bug-bg:before {
+  -webkit-transition: opacity 300ms ease-out;
+  transition: opacity 300ms ease-out;
+  opacity: 1;
+}
+li.item-button {
+  -webkit-transition-duration: 300ms;
+}
+li.item-button:active {
+  -webkit-transition-duration: 0ms;
+  background-color: #d9d9d9;
+}
+[data-theme="dark"] li.item-button:active {
+  background-color: #333333;
+}
+div.animate-height div.content-block {
+  margin: 0;
+  margin-top: 35px;
+}
+div.animate-height:nth-child(2) {
+  max-height: 46px;
+}
+div.update-view {
+  z-index: 99999;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+div.update-view img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 72px;
+  height: 72px;
+  margin-top: -37px;
+  margin-left: -37px;
+}
+div.update-view div.progress-bar {
+  position: relative;
+  top: 50%;
+  margin: 0px auto;
+  margin-top: 85px;
+  width: 200px;
+  height: 5px;
+  background-color: #aeaeae;
+  border-radius: 5px;
+}
+div.update-view div.progress-bar div.inner-progress {
+  height: 100%;
+  width: 0%;
+  background-color: #fff;
+  -webkit-transition: width .5s linear;
+  border-radius: 5px;
+}

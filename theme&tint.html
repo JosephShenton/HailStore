@@ -1,0 +1,55 @@
+<body>
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+    <div class="center sliding">Theme And Tint</div>
+  </div>
+</div>
+<div class="pages">
+  <div data-page="services" class="page">
+    <div class="page-content">
+      <div class="content-block">
+       <div class="content-block-title">Choose Layout Theme</div>
+       <div class="list-block">
+										<ul>
+											<li>
+												<label class="label-radio item-content">
+													<input name="layout-radio" value="layout-white" type="radio">
+													<div class="item-inner">
+														<div class="item-title">White</div>
+													</div>
+												</label>
+											</li>
+											<li>
+												<label class="label-radio item-content">
+													<input name="layout-radio" value="layout-default" checked="checked" type="radio">
+													<div class="item-inner">
+														<div class="item-title">Default</div>
+													</div>
+												</label>
+											</li>
+											<li>
+												<label class="label-radio item-content">
+													<input name="layout-radio" value="layout-dark" type="radio">
+													<div class="item-inner">
+														<div class="item-title">Dark</div>
+													</div>
+												</label>
+											</li>
+										</ul>
+									</div>
+									<script>
+									var myApp = new Framework7();
+									var $$ = Dom7;
+									$$('input[name="layout-radio"]').on('change', function () {
+										if (this.checked) {
+										$$('.view').removeClass('layout-dark layout-white');
+										$$('.view').addClass(this.value);
+										}
+									});
+									</script>
+       </div>
+    </div>
+  </div>
+</div>
+</body>

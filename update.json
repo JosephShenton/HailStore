@@ -1,0 +1,16 @@
+{
+	"en": {
+		"updates": [
+			
+			{
+				"version": "1.0.4",
+				"build": "10A001",
+				"updateType": "Bugs",
+				"description": "Bug Fixes For Navigation In HailStore.",
+				"content": "Fixed Navagition Issue Where Users Couldn't Navigate Properly .",
+				"instructions": "This update is recommended to all users of HailStore."
+			}
+		]
+	},
+	"de": {}
+}

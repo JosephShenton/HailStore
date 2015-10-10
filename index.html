@@ -1,0 +1,1976 @@
+<!DOCTYPE html>
+<html id="fade">
+<script>
+        @font-face {
+        font-family: Main;
+        src: url(Steinerlight.ttf);
+        }
+    </script>
+    <script language="javascript" type="text/javascript">
+        function windowClose() {
+        window.open('','_parent','');
+        window.close();
+        }
+    </script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>HailStore</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+     <link rel=“stylesheet” href=“css/framework7.ios.css”>
+
+<link rel=“stylesheet” href=“css/framework7.ios.colors.css”>
+    <link rel="stylesheet" href="css/HailStore.less.css">
+    <link rel="stylesheet" href="welcomescreen.css">
+	<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/HailStore.css">
+    <script src="js/jquery.js"></script>
+	<script src="js/cookies.js"></script>
+  </head>
+  <body onload="installed()">
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        <p>Left panel content goes here</p>
+      </div>
+    </div>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-cover">
+      <div class="content-block">
+        <p>Right panel content goes here</p>
+      </div>
+    </div>
+    <!-- Views, and they are tabs-->
+    <!-- We need to set "toolbar-through" class on it to keep space for our tab bar-->
+    <div class="views tabs toolbar-through">
+        
+      <!-- Your first view, it is also a .tab and should have "active" class to make it visible by default-->
+      <div id="tab1" class="view view-main tab active fade">
+          <div class="navbar">
+                    <div class="navbar-inner">
+                         <div class="left">
+                         <a class="button" onclick="refresh()" href="#">Refresh</a></div>
+                        <div class="center">Home</div>
+                        <script>
+                                function refresh() {
+                                location.reload();
+                                }
+                            </script>
+                        <script>
+                                function update() {
+                                myApp.alert("Software Update Required");
+                                }
+                            </script>
+                        <script>
+                                function sound() {
+                                location.reload();
+                                }
+                            </script>
+                        <script>
+                                function installed() {
+                                 myApp.addNotification({
+        title: 'Update Installed',
+        subtitle: 'Notification from teamihackify.com',
+        message: '1 Update was installed while you were away.',
+        media: '<img width="60" height="60" style="border-radius:100%" src="img/HailStoreH.png">'
+    });
+                                    myApp.addNotification({
+        title: 'Update Installed',
+        subtitle: 'Notification from teamihackify.com',
+        message: '1 Update was installed while you were away.',
+        media: '<img width="60" height="60" style="border-radius:100%" src="img/HailStoreH.png">'
+    });
+                                }
+                            </script>
+                    </div>
+                </div>
+        <!-- Pages-->
+        <div class="pages">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index-1" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content fade">
+            <div class="content-block fade">
+                <br>
+              <div class="slider-custom">
+                                        <div class="swiper-container swiper-1 swiper-container-horizontal">
+                                            <div class="swiper-wrapper">
+                                                <div style="width: 792px;" class="swiper-slide swiper-slide-active">
+                                                    <span class="">
+                                                        <img style="line-height: 60px;" src="img/HailStoreH.png" height="80" width="80">
+                                                        <p style="line-height: 0px; font-family:Head; font-size:30px">HailStore</p>
+                                                        <p style="line-height: 0px; font-family:Head; font-size:20px">Made By - TeamiHackify</p>
+                                                        <p style="line-height: 0px; font-family:Head"> << swipe for update! (11/10/15)</p>
+                                                    </span>
+                                                </div>
+                                                <div style="width: 792px;" class="swiper-slide swiper-slide-next">
+                                                    <span>
+                                                        <img style="line-height: 60px;" src="img/ICONE.png" height="40" width="40">&nbsp;
+														<img style="line-height: 60px;" src="img/CrackedCode.png" height="40" width="40">&nbsp;<br>
+                                                        <p style="font-size: 17px">iOSEmus And CrackedCode Have Been Added!</p>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-block-title">Featured Apps</div>
+                                <div class="slider-custom1">
+                                        <div class="swiper-container1 swiper-2 swiper-container-horizontal1">
+                                            <div class="swiper-wrapper">
+                                                <div style="width: 792px;" class="swiper-slide swiper-slide-active">
+                                                    <span class="">
+                                                        <a href="#tab28" class="tab-link item-link"><img style="line-height: 60px;" src="img/ICONE.png" height="60" width="60"></a>
+                                                        <p style="line-height: 0px; font-family:Head; font-size:18px">iOSEmus</p>
+                                                        <p style="line-height: 0px; font-family:Head; font-size:18px">Made By - Aiir</p>
+                                                        <p style="line-height: 0px; font-family:Head; font-size:18px">To Install Tap Picture</p>
+                                                        </span>
+                                                        
+                                                        
+                                                    
+                                                </div>
+                                                <div style="width: 792px;" class="swiper-slide swiper-slide-next">
+                                                    <span>
+                                                        <a href="#tab29" class="tab-link item-link"><img style="line-height: 60px;" src="img/CrackedCode.png" height="60" width="60"></a>&nbsp;
+                                                        <p style="line-height: 0px; font-family:Head; font-size:18px">CrackedCode</p>
+                                                        <p style="line-height: 0px; font-family:Head; font-size:18px">Made By - Codeify</p>
+                                                        <p style="line-height: 0px; font-family:Head; font-size:18px">To Install Tap Picture</p>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+              <br>
+                                    <div class="list-block" fade>
+                                <div class="list-block media-list" class="#fadep">
+                                    <br>
+                                    <div class="content-block-title" class="fade">Top Promoter Of The Month!</div>
+                                        <ul>
+                  <li fade><a href="#" class="PayWithATweet item-link item-content" fade>
+                                                <i class="link"></i>
+                                                <div class="item-media fade"><img src="img/About Icon.png" width="80" height="100">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Promote Us!</div>
+                                                        <div class="item-after button"><font color="#007AFF">GO</font></div>
+                                                    </div>
+                                                    <div class="item-subtitle">Wanna Help Us Continue Developing HailStore!</div>
+                                                    <div class="item-text">Then Promote Us With A Tweet!</div>
+                                                </div>
+                                            </a></li>
+                    <li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Twitter Name Of Top Promoter</div>
+								<div class="item-after">@</div>
+							</div>
+						</div>
+					</li>
+                    
+                      </ul>
+									</div>
+                                        <div class="content-block inset">
+                                            <div class="content-block-inner inset"><center><p>Welcome To HailStore! Here, You Will Find All Of The Best Emulator And Apps Around For The Non-Jailbroken Community</p></center></div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+            <div id="tab21" class="view tab">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                         <div class="left">
+                         <a href="#tab3" class="tab-link item-link back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+                        <div class="center">About</div>
+                        
+                    </div>
+                </div>
+                <div class="pages navbar-fixed">
+                    <div data-page="home-4" class="page">
+                        <div class="page-content">
+                            <div class="list-block">
+                                <div class="content-block-title">App Information</div>
+                             <div class="list-block inset">
+				<ul>
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Name</div>
+								<div class="item-after">HailStore</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Created by</div>
+								<div class="item-after">TeamiHackify</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="content-block-title">Versions</div>
+			<div class="list-block inset">
+				<ul>
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label" style="width: auto">HailStore</div>
+								<div class="item-after">1.0.4 (10A001)</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Framework7</div>
+								<div class="item-after">1.2.0</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="content-block-title">Contact</div>
+			<div align="left" class="list-block inset">
+				<ul>
+					<li>
+						<a href="mailto:minecraftmaniac506@gmail.com" class="item-link external" target="_blank">
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label" style="width: auto">E-Mail</div>
+									<div class="item-after">minecraftmaniac506@gmail.com</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="http://twitter.com/TeamiHackify" class="item-link external">
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">Twitter</div>
+									<div class="item-after">@TeamiHackify</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="https://bitbucket.org/TeamiHackify/teamihackify-repo" class="item-link external">
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">BitBucket</div>
+									<div class="item-after">TeamiHackify</div>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="list-block inset">
+				<ul>
+					<li>
+						<a href="#tab22" class=" tab-link item-link">
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">License</div>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+            <div id="tab22" class="view tab">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                         <div class="left">
+                         <a href="#tab21" class="tab-link item-link back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+                        <div class="center">License</div>
+                        
+                    </div>
+                </div>
+                <div class="pages navbar-fixed">
+                    <div data-page="home-5" class="page">
+                        <div class="page-content">
+                            <div class="list-block">
+                               <div align="center" class="content-block" style="padding: 0 10px">
+				<p style="font-size: 13px;">
+					<b>Copyright &copy; 2015 Joseph Shenton (TeamiHackify)<br><br>
+	
+					Permission is hereby granted, free of charge, to any person obtaining a copy
+					of this software and associated documentation files (the "Software"), to deal
+					in the Software without restriction, including without limitation the rights
+					to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+					copies of the Software, and to permit persons to whom the Software is
+					furnished to do so, subject to the following conditions:<br><br>
+					
+					The above copyright notice and this permission notice shall be included in all
+					copies or substantial portions of the Software.<br><br>
+					
+					THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+					IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+					FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+					AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+					LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+					OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+					SOFTWARE.</b>
+				</p>
+			</div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div id="tab28" class="view tab">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                         <div class="left">
+                         <a href="#tab1" class="tab-link item-link back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+                        <div class="center">iOSEmus</div>
+                        
+                    </div>
+                </div>
+                <div class="pages navbar-fixed">
+                    <div data-page="home-5" class="page">
+                        <div class="page-content">
+                            <div class="list-block">
+                               <div class="list-block media-list">
+<ul>
+<li>
+<div class="item-content">
+<div class="item-media">
+<img style="border-radius: 5px;" src="img/ICONE.png" onerror="imgError(this)" width="44">
+</div>
+<div class="item-inner">
+iOSEmus <div class="item-subtitle">
+By:
+Aiir <img class="icon icons8-Security-Checked-Filled verified" src="img/ICONE.png" height="16" width="16">
+</div>
+<div class="item-install">
+<a class="button install external" href="https://iosem.us/app/" onclick="install(34);" target="_blank" style="margin-top:-40px;float:right;">GET</a>
+</div>
+</div>
+</div></li><li>
+<center>
+<div class="buttons-row" style="width:92% !important;">
+<a href="#details" class="tab-link active button">Details</a>
+<a href="#reviews" class="tab-link button">Reviews</a>
+<a href="#more" class="tab-link button">More</a>
+</div>
+</center>
+<br>
+</li>
+</ul></div>
+
+</li>
+
+
+
+                                </div>
+                        <div class="tabs">
+<div id="reviews" class="tab">
+<div class="content-block-title">
+Reviews
+</div>
+<div class="content-block inset">
+<div class="content-block-inner">
+<p>
+</p><div class="video-extras-sparkbars">
+<p>
+</p><div align="center">
+<span style="color:gray">10</span>
+<img style="width:24px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACvUlEQVRoQ+2Z0XHaQBCG/4VM8hjcAZmJ7bxFJeAOkNTA0QGuIHYFcSrgUgCGVGCowM5bkDNj0gF5NGO0mSWQIdgSJ6HDOg96Pmn3u393b29FsPjUe6r2OkYHhDoI/cjX57bMka0Py3ePuuqMCJ+WNpiho1C3bNi0C3KprgnwVh2fEU5++npQNIw1kA89VWfG3brDzDiPQn3mDMh6WK04PhwFuuEEyDzJGXcE1JxWJEUNxIzWbah16RVJyo2l4/eEg7GvJ6UHOb5UVwCezAEGvkaBVkVDyPcKrVppISXGbJXeQkEOe8qrMK5TdttKtVraK0SRtCr171Qn+JGv+zbCqhBFFhBX6yf4qsPM+B2F+lEpLhJqa0WOuqpDhE0JbDWstlbEEELslBckAwQYmEwJ79LODwnRV0wfhboK1BioxcD4gfi7ybmTK7SOu6oNwucsMc7ADRE0mMZM7HGMWoXgicOp+QVMmHG6qRvIDGJQZrPwGa0VRaNAH6QtzgySdnIbeZVz0SjQqb5mAjnsKlUhdHL6kv81xq9RqOuFKCIhRQw5L6yeBwnOfhkFur0VyF8AqSZ88UwQ4v+ACK0fvh4nwaSG1vuealQZ0s2W4km7yzgFkla9nAKRsEiqXk6BMPAtCnTzqTh3CWR4T2gmtSvOgGy66zsDIr3alHDivCKSFy8lR+bXgaTm0ZnQWiiSOE5yBkTCakpQbucI43QU6ovcTWNZei2TXxFOhNbWN0QZSMfxYtRD8MBoEOHtc7TChd4QBWBxwWqD0dwVlMmviExX3VUlZHzzJoZigiJgPsax8AxnhDOTf465QVadlhCcxWjIeAeAxwxvC7WGzBhwBf1bX9+Ybk4hIEnGBPABeDQ0qMbwZhX856TJrucuv6a7UYZ1VhXZJeAeZJe7bWJrr4jJLu1yzV6RXe62ia0Xo8gf4AA+QtKuErcAAAAASUVORK5CYII=">
+<img style="width:24px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAC8klEQVRoQ+2ZQW7TUBCGZ54dKVUr4WxAzobeAC9RU6npDrVZlBM0PQHlBMAJKCcg3CAVTsUOV3IKO9ITkFUjsaERQYCaeNCzExSK/Ww/2yIvSjaVqsx4Pv8z8+ZNEJbkg0vCASuQRVNypchKkYLewCq1Cnqx0m4LVWTw6OEmlEr3/4mOqA6Izvz/y9q3y0q7dy1LkguIH7Cm7RCAhYiW/xfAkAyKAzqa553ePbvoJfUhDfL1wDJ+jTcOPaImDz7pA1N+j0O9MG33L/XCfKQG+bK3ZU0QnwBiM2VQ8l/3vCPz7KIlciAE8VNG1w+nDuoZU0YeBABM2xXGKgZpbNcB4H2mCPIwJhiaHVdYc2qABHXyXD61FkQRInpa7XRPlAfhAATQXtNHR1FnjSqpFYhB9MbsdEO7pWIg0UWvFAgRnVY73YPUB+JgQYo9qBG6XNO/15WvkbI+qoiGSpVSyynro8fKKxI0rSWokVmBR81cKqUWr/jImUstEME4H3sf8Ud5xuqA7AQQ7uQxzEr4OIfxuGm++9iPso0FmRkGFyrm/A8YAu9V1b44lh4abxsO9raawNhriTeayYQArqu2W8kNhDsaNLb5/XknU2QSxpluiGHP81OMsU8SscibZL0hRj35ar92jIgv00TGZyUgaGnM63ukWQSegcAsAjIQ8EGkL4IhY5Pmvbcf2rmm1szZYL/WAsTZYkLMRDAsl0abcQu46ZAKDCeGN0EDGOuX9VEvzo4/PHHXCos0Bcy5abt8kVHYJxOIX/zJlFl8EL5x/DFed0R5nqR9ZpUqsyI8AA7z82ajLzwsE2wLs8DkAsIDSNCWHdN2d7MEW0jXCnOaoC3vJllIy8Dmpsiftiw6+QXrHJng523yBwkW35+jAou7e8sC5Q4yncf4nvZZaFAFFX0hIDFdLHYhLaNKISAxqhRyOBYHEl0rainCVblq1HohJ34hLbgwRXyQ2+O+Su13vlD9OexmvYWI/GczfrILf3WSKfKZzW+jkDFCEk/1MAAAAABJRU5ErkJggg==">
+<span style="color:gray">0</span>
+</div>
+<p></p>
+<div class="video-extras-sparkbar-likes" style="width: 0%">
+</div>
+<div class="video-extras-sparkbar-dislikes" style="width: 100%">
+</div>
+</div>
+<p></p>
+</div>
+</div>
+<style>.video-extras-sparkbar-likes{float:left;height:2px;background:#008000;}.video-extras-sparkbar-dislikes{float:left;height:2px;background:#FF0000;}</style>
+<div class="card">
+<div class="card-header">
+Recent rating:
+</div>
+<div class="card-content">
+<div class="card-content-inner">
+<div>
+<span style="color:gray">Username:</span> TeamiHackify </div>
+<div>
+<span style="color:gray">Comment:</span> Love It!! </div>
+<div style="text-align: right">
+<a href="viewcomments.php?id=482">More Comments...</a>
+</div>
+</div>
+</div>
+<div class="card-footer">
+<div class="boxed" align="right">
+<div class="list-block">
+<ul>
+ 
+<li class="align-top">
+<div class="item-content">
+<div class="item-inner">
+<div class="item-input">
+<textarea id="comment-482" placeholder="Comment"></textarea>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div style="position:absolute; bottom:10px; right:17px;">
+<img style="width:24px;" id="thumb-down-482" onclick="thumb('down', 482)" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACvUlEQVRoQ+2Z0XHaQBCG/4VM8hjcAZmJ7bxFJeAOkNTA0QGuIHYFcSrgUgCGVGCowM5bkDNj0gF5NGO0mSWQIdgSJ6HDOg96Pmn3u393b29FsPjUe6r2OkYHhDoI/cjX57bMka0Py3ePuuqMCJ+WNpiho1C3bNi0C3KprgnwVh2fEU5++npQNIw1kA89VWfG3brDzDiPQn3mDMh6WK04PhwFuuEEyDzJGXcE1JxWJEUNxIzWbah16RVJyo2l4/eEg7GvJ6UHOb5UVwCezAEGvkaBVkVDyPcKrVppISXGbJXeQkEOe8qrMK5TdttKtVraK0SRtCr171Qn+JGv+zbCqhBFFhBX6yf4qsPM+B2F+lEpLhJqa0WOuqpDhE0JbDWstlbEEELslBckAwQYmEwJ79LODwnRV0wfhboK1BioxcD4gfi7ybmTK7SOu6oNwucsMc7ADRE0mMZM7HGMWoXgicOp+QVMmHG6qRvIDGJQZrPwGa0VRaNAH6QtzgySdnIbeZVz0SjQqb5mAjnsKlUhdHL6kv81xq9RqOuFKCIhRQw5L6yeBwnOfhkFur0VyF8AqSZ88UwQ4v+ACK0fvh4nwaSG1vuealQZ0s2W4km7yzgFkla9nAKRsEiqXk6BMPAtCnTzqTh3CWR4T2gmtSvOgGy66zsDIr3alHDivCKSFy8lR+bXgaTm0ZnQWiiSOE5yBkTCakpQbucI43QU6ovcTWNZei2TXxFOhNbWN0QZSMfxYtRD8MBoEOHtc7TChd4QBWBxwWqD0dwVlMmviExX3VUlZHzzJoZigiJgPsax8AxnhDOTf465QVadlhCcxWjIeAeAxwxvC7WGzBhwBf1bX9+Ybk4hIEnGBPABeDQ0qMbwZhX856TJrucuv6a7UYZ1VhXZJeAeZJe7bWJrr4jJLu1yzV6RXe62ia0Xo8gf4AA+QtKuErcAAAAASUVORK5CYII=">
+<img style="width:24px;" id="thumb-up-482" onclick="thumb('up', 482)" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAC8klEQVRoQ+2ZQW7TUBCGZ54dKVUr4WxAzobeAC9RU6npDrVZlBM0PQHlBMAJKCcg3CAVTsUOV3IKO9ITkFUjsaERQYCaeNCzExSK/Ww/2yIvSjaVqsx4Pv8z8+ZNEJbkg0vCASuQRVNypchKkYLewCq1Cnqx0m4LVWTw6OEmlEr3/4mOqA6Izvz/y9q3y0q7dy1LkguIH7Cm7RCAhYiW/xfAkAyKAzqa553ePbvoJfUhDfL1wDJ+jTcOPaImDz7pA1N+j0O9MG33L/XCfKQG+bK3ZU0QnwBiM2VQ8l/3vCPz7KIlciAE8VNG1w+nDuoZU0YeBABM2xXGKgZpbNcB4H2mCPIwJhiaHVdYc2qABHXyXD61FkQRInpa7XRPlAfhAATQXtNHR1FnjSqpFYhB9MbsdEO7pWIg0UWvFAgRnVY73YPUB+JgQYo9qBG6XNO/15WvkbI+qoiGSpVSyynro8fKKxI0rSWokVmBR81cKqUWr/jImUstEME4H3sf8Ud5xuqA7AQQ7uQxzEr4OIfxuGm++9iPso0FmRkGFyrm/A8YAu9V1b44lh4abxsO9raawNhriTeayYQArqu2W8kNhDsaNLb5/XknU2QSxpluiGHP81OMsU8SscibZL0hRj35ar92jIgv00TGZyUgaGnM63ukWQSegcAsAjIQ8EGkL4IhY5Pmvbcf2rmm1szZYL/WAsTZYkLMRDAsl0abcQu46ZAKDCeGN0EDGOuX9VEvzo4/PHHXCos0Bcy5abt8kVHYJxOIX/zJlFl8EL5x/DFed0R5nqR9ZpUqsyI8AA7z82ajLzwsE2wLs8DkAsIDSNCWHdN2d7MEW0jXCnOaoC3vJllIy8Dmpsiftiw6+QXrHJng523yBwkW35+jAou7e8sC5Q4yncf4nvZZaFAFFX0hIDFdLHYhLaNKISAxqhRyOBYHEl0rainCVblq1HohJ34hLbgwRXyQ2+O+Su13vlD9OexmvYWI/GczfrILf3WSKfKZzW+jkDFCEk/1MAAAAABJRU5ErkJggg==">
+<a href="#" onclick="makecomment(482)" class="button active">Go</a>
+</div>
+<style>.boxed{border:2px solid green;border-radius:5px;}</style>
+</div>
+</div>
+</div>
+<div id="details" class="tab active">
+    <br>
+<div class="content-block-title"><br>Description</div>
+<div class="content-block">
+<div class="content-block-inner">
+A Great Cydia Alternative Th<div class="desc" style="display:none">at We Recomend To All Users.
+</div>
+<a href="#" onclick="if ($$('.desc').css('display') == 'none'){$$('.desc').css('display', 'inline'); this.innerHTML='Less...'} else {$$('.desc').css('display', 'none'); this.innerHTML='More...'}">More...</a>
+</div>
+</div>
+<div class="content-block-title">
+    <br>
+    <br>
+Information
+</div>
+<div class="content-block">
+<div class="content-block-inner">
+<span style="color:gray">Developer:</span> iOSEmus <br>
+<span style="color:gray">Category:</span> Cydia Alternatives <br>
+<span style="color:gray">Version:</span> 1.0.0 <br>
+<span style="color:gray">Compatibility:</span> This app is compatible with your device.
+<br>
+<span style="color:gray">Languages:</span> English
+</div>
+</div>
+</div>
+<div id="more" class="tab">
+<div class="content-block-title">
+More by this developer
+</div>
+<div class="list-block media-list inset">
+<ul>
+<li onclick="">
+<div class="content-block"><div class="content-block-inner"><center class="" style="color:gray;">Nothing Else By This Developer</center></div></div>
+</a>
+</li>
+</ul>
+</div>
+<div class="content-block-title">
+App installs
+</div>
+<div class="content-block inset">
+<div class="content-block-inner">
+<p>
+<span style="color:gray">Live Total Installs:</span>
+12 </p>
+</div>
+</div>
+</div>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div id="tab29" class="view tab">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                         <div class="left">
+                         <a href="#tab1" class="tab-link item-link back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+                        <div class="center">CrackedCode</div>
+                        
+                    </div>
+                </div>
+                <div class="pages navbar-fixed">
+                    <div data-page="home-5" class="page">
+                        <div class="page-content">
+                            <div class="list-block">
+                               <div class="list-block media-list">
+<ul>
+<li>
+<div class="item-content">
+<div class="item-media">
+<img style="border-radius: 5px;" src="img/CrackedCode.png" onerror="imgError(this)" width="44">
+</div>
+<div class="item-inner">
+CrackedCode <div class="item-subtitle">
+By:
+Codeify <img class="icon icons8-Security-Checked-Filled verified" src="img/CrackedCode.png" height="16" width="16">
+</div>
+<div class="item-install">
+<a class="button install external" href="http://apps.appshed.com/CC/" onclick="install(34);" target="_blank" style="margin-top:-40px;float:right;">GET</a>
+</div>
+</div>
+</div></li><li>
+<center>
+<div class="buttons-row" style="width:92% !important;">
+<a href="#details" class="tab-link active button">Details</a>
+<a href="#reviews" class="tab-link button">Reviews</a>
+<a href="#more" class="tab-link button">More</a>
+</div>
+</center>
+<br>
+</li>
+</ul></div>
+<div class="tabs">
+<div id="reviews" class="tab">
+<div class="content-block-title">
+Reviews
+</div>
+<div class="content-block inset">
+<div class="content-block-inner">
+<p>
+</p><div class="video-extras-sparkbars">
+<p>
+</p><div align="center">
+<span style="color:gray">0</span>
+<img style="width:24px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACvUlEQVRoQ+2Z0XHaQBCG/4VM8hjcAZmJ7bxFJeAOkNTA0QGuIHYFcSrgUgCGVGCowM5bkDNj0gF5NGO0mSWQIdgSJ6HDOg96Pmn3u393b29FsPjUe6r2OkYHhDoI/cjX57bMka0Py3ePuuqMCJ+WNpiho1C3bNi0C3KprgnwVh2fEU5++npQNIw1kA89VWfG3brDzDiPQn3mDMh6WK04PhwFuuEEyDzJGXcE1JxWJEUNxIzWbah16RVJyo2l4/eEg7GvJ6UHOb5UVwCezAEGvkaBVkVDyPcKrVppISXGbJXeQkEOe8qrMK5TdttKtVraK0SRtCr171Qn+JGv+zbCqhBFFhBX6yf4qsPM+B2F+lEpLhJqa0WOuqpDhE0JbDWstlbEEELslBckAwQYmEwJ79LODwnRV0wfhboK1BioxcD4gfi7ybmTK7SOu6oNwucsMc7ADRE0mMZM7HGMWoXgicOp+QVMmHG6qRvIDGJQZrPwGa0VRaNAH6QtzgySdnIbeZVz0SjQqb5mAjnsKlUhdHL6kv81xq9RqOuFKCIhRQw5L6yeBwnOfhkFur0VyF8AqSZ88UwQ4v+ACK0fvh4nwaSG1vuealQZ0s2W4km7yzgFkla9nAKRsEiqXk6BMPAtCnTzqTh3CWR4T2gmtSvOgGy66zsDIr3alHDivCKSFy8lR+bXgaTm0ZnQWiiSOE5yBkTCakpQbucI43QU6ovcTWNZei2TXxFOhNbWN0QZSMfxYtRD8MBoEOHtc7TChd4QBWBxwWqD0dwVlMmviExX3VUlZHzzJoZigiJgPsax8AxnhDOTf465QVadlhCcxWjIeAeAxwxvC7WGzBhwBf1bX9+Ybk4hIEnGBPABeDQ0qMbwZhX856TJrucuv6a7UYZ1VhXZJeAeZJe7bWJrr4jJLu1yzV6RXe62ia0Xo8gf4AA+QtKuErcAAAAASUVORK5CYII=">
+<img style="width:24px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAC8klEQVRoQ+2ZQW7TUBCGZ54dKVUr4WxAzobeAC9RU6npDrVZlBM0PQHlBMAJKCcg3CAVTsUOV3IKO9ITkFUjsaERQYCaeNCzExSK/Ww/2yIvSjaVqsx4Pv8z8+ZNEJbkg0vCASuQRVNypchKkYLewCq1Cnqx0m4LVWTw6OEmlEr3/4mOqA6Izvz/y9q3y0q7dy1LkguIH7Cm7RCAhYiW/xfAkAyKAzqa553ePbvoJfUhDfL1wDJ+jTcOPaImDz7pA1N+j0O9MG33L/XCfKQG+bK3ZU0QnwBiM2VQ8l/3vCPz7KIlciAE8VNG1w+nDuoZU0YeBABM2xXGKgZpbNcB4H2mCPIwJhiaHVdYc2qABHXyXD61FkQRInpa7XRPlAfhAATQXtNHR1FnjSqpFYhB9MbsdEO7pWIg0UWvFAgRnVY73YPUB+JgQYo9qBG6XNO/15WvkbI+qoiGSpVSyynro8fKKxI0rSWokVmBR81cKqUWr/jImUstEME4H3sf8Ud5xuqA7AQQ7uQxzEr4OIfxuGm++9iPso0FmRkGFyrm/A8YAu9V1b44lh4abxsO9raawNhriTeayYQArqu2W8kNhDsaNLb5/XknU2QSxpluiGHP81OMsU8SscibZL0hRj35ar92jIgv00TGZyUgaGnM63ukWQSegcAsAjIQ8EGkL4IhY5Pmvbcf2rmm1szZYL/WAsTZYkLMRDAsl0abcQu46ZAKDCeGN0EDGOuX9VEvzo4/PHHXCos0Bcy5abt8kVHYJxOIX/zJlFl8EL5x/DFed0R5nqR9ZpUqsyI8AA7z82ajLzwsE2wLs8DkAsIDSNCWHdN2d7MEW0jXCnOaoC3vJllIy8Dmpsiftiw6+QXrHJng523yBwkW35+jAou7e8sC5Q4yncf4nvZZaFAFFX0hIDFdLHYhLaNKISAxqhRyOBYHEl0rainCVblq1HohJ34hLbgwRXyQ2+O+Su13vlD9OexmvYWI/GczfrILf3WSKfKZzW+jkDFCEk/1MAAAAABJRU5ErkJggg==">
+<span style="color:gray">8</span>
+</div>
+<p></p>
+<div class="video-extras-sparkbar-likes" style="width: 0%">
+</div>
+<div class="video-extras-sparkbar-dislikes" style="width: 100%">
+</div>
+</div>
+<p></p>
+</div>
+</div>
+<style>.video-extras-sparkbar-likes{float:left;height:2px;background:#008000;}.video-extras-sparkbar-dislikes{float:left;height:2px;background:#FF0000;}</style>
+<div class="card">
+<div class="card-header">
+Recent rating:
+</div>
+<div class="card-content">
+<div class="card-content-inner">
+<div>
+<span style="color:gray">Username:</span> Matt_Infield </div>
+<div>
+<span style="color:gray">Comment:</span> Doesn't work </div>
+<div style="text-align: right">
+<a href="viewcomments.php?id=482">More Comments...</a>
+</div>
+</div>
+</div>
+<div class="card-footer">
+<div class="boxed" align="right">
+<div class="list-block">
+<ul>
+ 
+<li class="align-top">
+<div class="item-content">
+<div class="item-inner">
+<div class="item-input">
+<textarea id="comment-482" placeholder="Comment"></textarea>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div style="position:absolute; bottom:10px; right:17px;">
+<img style="width:24px;" id="thumb-down-482" onclick="thumb('down', 482)" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACvUlEQVRoQ+2Z0XHaQBCG/4VM8hjcAZmJ7bxFJeAOkNTA0QGuIHYFcSrgUgCGVGCowM5bkDNj0gF5NGO0mSWQIdgSJ6HDOg96Pmn3u393b29FsPjUe6r2OkYHhDoI/cjX57bMka0Py3ePuuqMCJ+WNpiho1C3bNi0C3KprgnwVh2fEU5++npQNIw1kA89VWfG3brDzDiPQn3mDMh6WK04PhwFuuEEyDzJGXcE1JxWJEUNxIzWbah16RVJyo2l4/eEg7GvJ6UHOb5UVwCezAEGvkaBVkVDyPcKrVppISXGbJXeQkEOe8qrMK5TdttKtVraK0SRtCr171Qn+JGv+zbCqhBFFhBX6yf4qsPM+B2F+lEpLhJqa0WOuqpDhE0JbDWstlbEEELslBckAwQYmEwJ79LODwnRV0wfhboK1BioxcD4gfi7ybmTK7SOu6oNwucsMc7ADRE0mMZM7HGMWoXgicOp+QVMmHG6qRvIDGJQZrPwGa0VRaNAH6QtzgySdnIbeZVz0SjQqb5mAjnsKlUhdHL6kv81xq9RqOuFKCIhRQw5L6yeBwnOfhkFur0VyF8AqSZ88UwQ4v+ACK0fvh4nwaSG1vuealQZ0s2W4km7yzgFkla9nAKRsEiqXk6BMPAtCnTzqTh3CWR4T2gmtSvOgGy66zsDIr3alHDivCKSFy8lR+bXgaTm0ZnQWiiSOE5yBkTCakpQbucI43QU6ovcTWNZei2TXxFOhNbWN0QZSMfxYtRD8MBoEOHtc7TChd4QBWBxwWqD0dwVlMmviExX3VUlZHzzJoZigiJgPsax8AxnhDOTf465QVadlhCcxWjIeAeAxwxvC7WGzBhwBf1bX9+Ybk4hIEnGBPABeDQ0qMbwZhX856TJrucuv6a7UYZ1VhXZJeAeZJe7bWJrr4jJLu1yzV6RXe62ia0Xo8gf4AA+QtKuErcAAAAASUVORK5CYII=">
+<img style="width:24px;" id="thumb-up-482" onclick="thumb('up', 482)" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAC8klEQVRoQ+2ZQW7TUBCGZ54dKVUr4WxAzobeAC9RU6npDrVZlBM0PQHlBMAJKCcg3CAVTsUOV3IKO9ITkFUjsaERQYCaeNCzExSK/Ww/2yIvSjaVqsx4Pv8z8+ZNEJbkg0vCASuQRVNypchKkYLewCq1Cnqx0m4LVWTw6OEmlEr3/4mOqA6Izvz/y9q3y0q7dy1LkguIH7Cm7RCAhYiW/xfAkAyKAzqa553ePbvoJfUhDfL1wDJ+jTcOPaImDz7pA1N+j0O9MG33L/XCfKQG+bK3ZU0QnwBiM2VQ8l/3vCPz7KIlciAE8VNG1w+nDuoZU0YeBABM2xXGKgZpbNcB4H2mCPIwJhiaHVdYc2qABHXyXD61FkQRInpa7XRPlAfhAATQXtNHR1FnjSqpFYhB9MbsdEO7pWIg0UWvFAgRnVY73YPUB+JgQYo9qBG6XNO/15WvkbI+qoiGSpVSyynro8fKKxI0rSWokVmBR81cKqUWr/jImUstEME4H3sf8Ud5xuqA7AQQ7uQxzEr4OIfxuGm++9iPso0FmRkGFyrm/A8YAu9V1b44lh4abxsO9raawNhriTeayYQArqu2W8kNhDsaNLb5/XknU2QSxpluiGHP81OMsU8SscibZL0hRj35ar92jIgv00TGZyUgaGnM63ukWQSegcAsAjIQ8EGkL4IhY5Pmvbcf2rmm1szZYL/WAsTZYkLMRDAsl0abcQu46ZAKDCeGN0EDGOuX9VEvzo4/PHHXCos0Bcy5abt8kVHYJxOIX/zJlFl8EL5x/DFed0R5nqR9ZpUqsyI8AA7z82ajLzwsE2wLs8DkAsIDSNCWHdN2d7MEW0jXCnOaoC3vJllIy8Dmpsiftiw6+QXrHJng523yBwkW35+jAou7e8sC5Q4yncf4nvZZaFAFFX0hIDFdLHYhLaNKISAxqhRyOBYHEl0rainCVblq1HohJ34hLbgwRXyQ2+O+Su13vlD9OexmvYWI/GczfrILf3WSKfKZzW+jkDFCEk/1MAAAAABJRU5ErkJggg==">
+<a href="#" onclick="makecomment(482)" class="button active">Go</a>
+</div>
+<style>.boxed{border:2px solid green;border-radius:5px;}</style>
+</div>
+</div>
+</div>
+<div id="details" class="tab active">
+<div class="content-block-title">Description</div>
+<div class="content-block">
+<div class="content-block-inner">
+A Great Cydia Alternative Th<div class="desc" style="display:none">at We Recomend To All Users.
+</div>
+<a href="#" onclick="if ($$('.desc').css('display') == 'none'){$$('.desc').css('display', 'inline'); this.innerHTML='Less...'} else {$$('.desc').css('display', 'none'); this.innerHTML='More...'}">More...</a>
+</div>
+</div>
+<div class="content-block-title">
+Information
+</div>
+<div class="content-block">
+<div class="content-block-inner">
+<span style="color:gray">Developer:</span> Codeify <br>
+<span style="color:gray">Category:</span> Cydia Alternatives <br>
+<span style="color:gray">Version:</span> 1.0.1 <br>
+<span style="color:gray">Compatibility:</span> This app is compatible with your device.
+<br>
+<span style="color:gray">Languages:</span> English
+</div>
+</div>
+</div>
+<div id="more" class="tab">
+<div class="content-block-title">
+More by this developer
+</div>
+<div class="list-block media-list inset">
+<ul>
+<li onclick="">
+<div class="content-block"><div class="content-block-inner"><center class="" style="color:gray;">Nothing Else By This Developer</center></div></div>
+</a>
+</li>
+</ul>
+</div>
+<div class="content-block-title">
+App installs
+</div>
+<div class="content-block inset">
+<div class="content-block-inner">
+<p>
+<span style="color:gray">Live Total Installs:</span>
+1 </p>
+</div>
+</div>
+</div>
+</div>
+</li>
+
+
+
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<script>(function() {with (this[2]) {with (this[1]) {with (this[0]) {return function(event) {makecomment(34)
+};}}}})</script>
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+      
+
+
+
+            <div id="tab26" class="view tab">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                         <div class="left">
+                         <a href="#tab2" class="tab-link item-link back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+                        <div class="center">Repos</div>
+                        <div class="right sliding" style="transform: translate3d(0px, 0px, 0px);"><a href="#" class="link open-popup"><span data-i18n="NEW"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAABNklEQVRoQ+2Z0VEDMQxEn9IAdAB0kA4IlQBdQAqAdEGohNABHRA6CA3EGcNPYM6XYQ/PgG89c3+3Z0krrSVf0MiKRvzAjvw1Js3IQUZu0inByZf3Em8sYn0QK7xQh5F5ugIeCvZccxdLwdZeSB1HbtOK4Lxz58Qz9zGzI4UImJHe1HBq6ZXj1HJqWX7768c14hpxjYy+RnIrnriUztpgChwXsBsSL+J3H0sjQLdq5aFowqu0WW3QlrOu4azkyIwJT7Vtkr6/5YJFrL5j7YgUzd8AjZWRRoo9p8Cn/ObbEGVNCY4Klw/vIMvv8mfyq5i+j/Goq0fQbbzbeLfxo2/jdQEBy68ePcuv5dfya/nVFeRjBGjiZ2iOQb6Jgfzsr/X/+j09gEwVWuccUa0ZgLMjA4JXBdoMIzsIQcszwmP8XwAAAABJRU5ErkJggg==" alt="Plua icon" style="width:25px;height:25px;"></span></a></div>
+                    </div>
+                </div>
+
+                <div class="pages navbar-fixed">
+                    <div data-page="home-5" class="page">
+                       <div class="page-content HailStore-items-list">
+<div class="content-block-title">Repos</div>
+<div class="list-block media-list HailStore-items-list">
+<ul class="inner-repos"></ul>
+</div>
+</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+<div id="tabsoftwareupdate" class="view tab software-update modal-in">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                         <div class="left">
+                         <a href="#tab3" class="tab-link item-link back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+                        <div class="center">Software Update</div>
+                    </div>
+                </div>
+
+                <div class="pages navbar-fixed">
+                    <div data-page="home-5" class="page">
+                       <div class="page-content">
+			<div class='content-block tablet-inset'> 
+				<div class='content-block-inner'> 
+					<img src='img/HailStoreHome.png' style='width: 60px; height: 60px; vertical-align: top; float: left;'> 
+					<p style='margin: 0; margin-left: 8px;'> 
+						<span style='font-weight: 500; font-size: 16px; margin-left: 8px'>HailStore 1.0.5<br></span> 
+						<span style='font-size: 14px; margin-left: 8px'>TeamiHackify<br></span> 
+						<span style='font-size: 14px; margin-left: 8px'>Downloaded</span> 
+					</p> 
+					<p>Improved UI And Bug Fixes <br><br>For more information, visit:<br><a href='https://bitbucket.org/TeamiHackify/teamihackify-repo' class='external' target='_blank' style='text-decoration: underline;'>https://twitter.com/TeamiHackify</a></p> 
+				</div> 
+			<div class='list-block tablet-inset'> 
+				<ul> 
+					<li> 
+						<a href='#' class='item-link open-popup' data-popup='.popup-update-detail'> 
+							<div class='item-content'> 
+								<div class='item-inner'> 
+									<div class='item-title'>Details</div> 
+								</div> 
+							</div> 
+						</a> 
+					</li> 
+				</ul>
+			</div> 
+			<div class='list-block tablet-inset'> 
+				<ul> 
+					<li class='center item-button'> 
+						<a href='#' class='updateme'> 
+							<div class='item-content'> 
+								<div class='item-inner'> 
+									<div class='item-title' style='width: 100%;'>Install</div> 
+								</div> 
+							</div> 
+						</a> 
+					</li> 
+				</ul> 
+			</div>                    
+                        
+        
+        
+                           </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+
+        <div id="tab23" class="view tab">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                         <div class="left">
+                         <a href="#tab3" class="tab-link item-link back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+                        <div class="center">Themes And Tint</div>
+                        
+                    </div>
+                </div>
+                <div class="pages navbar-fixed">
+                    <div data-page="home-5" class="page">
+                        <div class="page-content">
+                            <div class="list-block">
+                 <div class="content-block-title">Choose Layout Theme</div>
+       <div class="list-block inset">
+										<ul class="inset">
+											<li style="background-color: #fff; color: #000; border: none !important;">
+												<label class="label-radio item-content">
+													<input name="layout-radio" value="layout-white" type="radio">
+													<div class="item-inner">
+														<div class="item-title">White</div>
+													</div>
+												</label>
+											</li>
+											<li style="background-color: #f7f7f8; color: #000; border: none !important;">
+												<label class="label-radio item-content">
+													<input name="layout-radio" value="layout-default" checked="checked" type="radio">
+													<div class="item-inner">
+														<div class="item-title">Default</div>
+													</div>
+												</label>
+											</li>
+											<li style="background-color: #1c1d1f; color: #fff; border: none !important;">
+												<label class="label-radio item-content">
+													<input name="layout-radio" value="layout-dark" type="radio">
+													<div class="item-inner">
+														<div class="item-title">Dark</div>
+													</div>
+												</label>
+											</li>
+											<li style="background-color: transparent; color: #ffdd00; border: none !important;">
+												<label class="label-radio item-content">
+													<input name="layout-radio" value="layout-transparent" type="radio">
+													<div class="item-inner">
+														<div class="item-title">Transparent</div>
+													</div>
+												</label>
+											</li>
+										</ul>
+									</div>
+
+									
+                                <div class="content-block-title">Choose Tint Theme</div>
+       <div class="list-block inset">
+										<ul class="inset">
+											<li style="background-color: #fff; color: #000; border: none !important;">
+												<label class="label-radio item-content">
+													<input name="layout-radio" value="theme-black" type="radio">
+													<div class="item-inner">
+														<div class="item-title">Black</div>
+													</div>
+												</label>
+											</li>
+											<li style="background-color: #000; color: #fff; border: none !important;">
+												<label class="label-radio item-content">
+													<input name="layout-radio" value="theme-white" checked="checked" type="radio">
+													<div class="item-inner">
+														<div class="item-title">White</div>
+													</div>
+												</label>
+											</li>
+											<li style="background-color: transparent; color: #8e8e93; border: none !important;">
+												<label class="label-radio item-content">
+													<input name="layout-radio" value="theme-gray" type="radio">
+													<div class="item-inner">
+														<div class="item-title">Gray</div>
+													</div>
+												</label>
+											</li>
+											<li style="background-color: transparent; color: #ff0000; border: none !important;">
+												<label class="label-radio item-content">
+													<input name="layout-radio" value="theme-red" type="radio">
+													<div class="item-inner">
+														<div class="item-title">Red</div>
+													</div>
+												</label>
+											</li>
+                                            <li style="background-color: transparent; color: #4cd964; border: none !important;">
+												<label class="label-radio item-content">
+													<input name="layout-radio" value="theme-green" type="radio">
+													<div class="item-inner">
+														<div class="item-title">Green</div>
+													</div>
+												</label>
+											</li>
+                                            <li style="background-color: transparent; color: #007aff; border: none !important;">
+												<label class="label-radio item-content">
+													<input name="layout-radio" value="theme-blue" type="radio">
+													<div class="item-inner">
+														<div class="item-title">Blue (Default)</div>
+													</div>
+												</label>
+											</li>
+                                            <li style="background-color: transparent; color: #ff2d55; border: none !important;">
+												<label class="label-radio item-content">
+													<input name="layout-radio" value="theme-pink" type="radio">
+													<div class="item-inner">
+														<div class="item-title">Pink</div>
+													</div>
+												</label>
+											</li>
+                                            <li style="background-color: transparent; color: #ff9500; border: none !important;">
+												<label class="label-radio item-content">
+													<input name="layout-radio" value="theme-orange" type="radio">
+													<div class="item-inner">
+														<div class="item-title">Orange</div>
+													</div>
+												</label>
+											</li>
+                                            <li style="background-color: transparent; color: #ffcc00; border: none !important;">
+												<label class="label-radio item-content">
+													<input name="layout-radio" value="theme-yellow" type="radio">
+													<div class="item-inner">
+														<div class="item-title">Yellow</div>
+													</div>
+												</label>
+											</li>
+                                            <li style="background-color: transparent; color: #5ac8fa; border: none !important;">
+												<label class="label-radio item-content">
+													<input name="layout-radio" value="theme-lightblue" type="radio">
+													<div class="item-inner">
+														<div class="item-title">Light Blue</div>
+													</div>
+												</label>
+											</li>
+										</ul>
+									</div>
+									<script>
+									
+									</script>
+									    <script type="text/javascript" src="js/framework7.js"></script>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ <div class="popup">
+      <div class="view view-popup navbar-fixed">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left"></div>
+            <div class="center sliding">New Task</div>
+            <div class="right"><a href="#" class="link close-popup">Cancel</a></div>
+          </div>
+        </div>
+        <div class="pages">
+          <div class="page">
+            <div class="page-content">
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner"> 
+                        <div class="item-title label">Task</div>
+                        <div class="item-input">
+                          <input type="text" name="title">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner"> 
+                        <div class="item-title label">Color</div>
+                        <div class="item-input"><span data-color="orange" class="color selected"></span><span data-color="green" class="color"></span><span data-color="blue" class="color"></span><span data-color="yellow" class="color"></span><span data-color="white" class="color"></span><span data-color="pink" class="color"></span><span data-color="purple" class="color"></span><span data-color="cyan" class="color"></span></div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-block"><a href="#" class="button add-task">Add Task</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Template-->
+    <script id="todo-item-template" type="text/template">
+      <ul>{{#each this}}
+        <li data-color="{{color}}" data-id="{{id}}" class="swipeout">
+          <div class="swipeout-content">
+            <label class="label-checkbox item-content"><input type="checkbox" {{checked}}>
+              <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+              <div class="item-inner">
+                <div class="item-title">{{title}}</div>
+              </div>
+            </label>
+          </div>
+          <div class="swipeout-actions-right"><a href="#" class="swipeout-delete">Delete</a></div>
+        </li>{{/each}}
+      </ul>
+    </script>
+
+
+
+
+            <script id="bug-open-template" type="template">
+			<div class="list-block" data-bug="{{internalID}}">
+				<ul>
+					<li class="swipeout" style="overflow: hidden">
+						<div class="swipeout-content" style="font-size: 14px; padding: 20px 19px 20px 30px;">
+							<p class="title" style="margin: 0 5px 0 0; overflow: hidden; text-overflow: ellipsis; font-weight: bold; float: left;">{{title}}</p>
+							<p class="date" style="margin: 0; float: right; color: #23b2fd">{{date}}</p>
+							<p class="issueID" style="clear: both; margin: 0; float: left;">{{id}}</p>
+							<p class="category" style="margin: 0; float: right;">{{category}}</p>
+							<p class="description" style="clear: both; margin: 5px 0 0 0; max-height: 32px; text-overflow: ellipsis; overflow: hidden;">{{description}}</p>
+						</div>
+						<div class="swipeout-actions">
+							<div class="swipeout-actions-inner" style="">
+								<a href="#" class="action0 swipeout-close gray" style="background-color: #c0bfc5;">More</a>
+								<a href="#" class="action1 swipeout-delete orange" style="background-color: #ff8810;">Archive</a>
+								<a href="" class="action2 swipeout-delete red" style="background-color: #ff3b30;">
+									<div>Close</div>
+								</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</script>
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+      <!--------------------------------> 
+     <!--------------------------------> 
+      <div id="tab20" class="view tab">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="navbar-inner">
+                         <div class="left">
+                         <a href="#tab2" class="tab-link item-link back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+                        <div class="center">Packages</div>
+                        
+                        </div>  
+                    </div>
+                </div>
+ 
+                <div class="pages navbar-fixed">
+                    <div data-page="home-3" class="page">
+                      <form data-search-list=".list-block-search" data-search-in=".item-title" class="searchbar searchbar-init">
+			      <div class="searchbar-input">
+			        <input type="search" placeholder="Search"><a href="#" class="searchbar-clear"></a>
+			      </div><a href="#" class="searchbar-cancel">X</a>
+			    </form>
+ 
+			    <!-- Search bar overlay -->
+			    <div class="searchbar-overlay"></div>  
+                        <div class="page-content">
+                            <div class="content-block tablet-inset searchbar-not-found">
+			       <div class="content-block-inner">Nothing found</div>
+			     </div>
+				 <div class="list-block table-inset list-block-search searchbar-found">
+                                <div class="list-block media-list">
+                                    &nbsp;&nbsp;
+                                    <img src="img/up.png" width="4" height="20">&nbsp;= Signed&nbsp;&nbsp;<img src="img/un.png" width="4" height="20">&nbsp;= May Not Work
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content barmagnet">
+                                                <div class="item-media"><img src="img/BM.png" width="80">&nbsp;&nbsp;<img src="img/un.png" width="4" height="75"></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">BarMagnet</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">Carlo Tortorella</div>
+                                                    <div class="item-text">A Torrent Remote Controller For iOS!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content cartoon">
+                                                <div class="item-media"><img src="img/CHD.png" width="80">&nbsp;<img src="img/up.png" width="4" height="75"></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">(SITE) Cartoon HD</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">GappCenter</div>
+                                                    <div class="item-text">A Cartoon/Movie Streaming Site!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content cartoonapp">
+                                                <div class="item-media"><img src="img/CHD.png" width="80">&nbsp;&nbsp;<img src="img/un.png" width="4" height="75"></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Cartoon HD</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">GearsCenter</div>
+                                                    <div class="item-text">A Cartoon/Movie Streaming App!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content downcloud">
+                                                <div class="item-media"><img src="img/DC.png" width="80">&nbsp;<img src="img/up.png" width="4" height="75"></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">DownCloud</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">@DownCloud</div>
+                                                    <div class="item-text">A Music Downloading App!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content flap">
+                                                <div class="item-media"><img src="img/FB.png" width="80">&nbsp;<img src="img/up.png" width="4" height="75"></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Flappy Bird</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">.GEARS (Dong Nguyen)</div>
+                                                    <div class="item-text">A Birdy Obstacle Course App!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content flop">
+                                                <div class="item-media"><img src="img/floppy.png" width="80">&nbsp;<img src="img/up.png" width="4" height="75"></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Floppy Cloud</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">Kyle Hankinson</div>
+                                                    <div class="item-text">A Hidden NES & SNES Emulator!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content gpc">
+                                                <div class="item-media"><img src="img/GPC.png" width="80">&nbsp;<img src="img/up.png" width="4" height="75"></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Game Play Color</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">InSeven</div>
+                                                    <div class="item-text">A Game Boy / Game Boy Color Emulator!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content gba1">
+                                                <div class="item-media"><img src="img/GBA1.png" width="80">&nbsp;&nbsp;<img src="img/un.png" width="4" height="75"></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">GBA4IOS 1.6.2</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">Riley Testut</div>
+                                                    <div class="item-text">A Game Boy Advance Emulator!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content gba2">
+                                                <div class="item-media"><img src="img/GBA2.png" width="80">&nbsp;<img src="img/up.png" width="4" height="75"></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">GBA4IOS 2.1</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">Riley Testut</div>
+                                                    <div class="item-text">A Game Boy Advance Emulator!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content gb8">
+                                                <div class="item-media"><img src="img/GB.png" width="80">&nbsp;<img src="img/up.png" width="4" height="75"></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Gearboy (8+)</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">Ignacio Sanchez</div>
+                                                    <div class="item-text">A GameBoy and GameBoy Color Emulator!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content gb7">
+                                                <div class="item-media"><img src="GB.png" width="80">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Gearboy (5-7)</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">Ignacio Sanchez</div>
+                                                    <div class="item-text">A GameBoy and GameBoy Color Emulator!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content gs">
+                                                <div class="item-media"><img src="GS.png" width="80">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Gearsystem</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">Ignacio Sanchez</div>
+                                                    <div class="item-text">A Sega Master System and Game Gear Emulator!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content gpsp">
+                                                <div class="item-media"><img src="gpsp.png" width="80">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">gpSPhone</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">ZodTTD</div>
+                                                    <div class="item-text">A Game Boy Advance Emulator!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content grid">
+                                                <div class="item-media"><img src="GRID.png" width="80">&nbsp;<img src="up.png" width="4" height="75"></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Gridlee</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">David Valdeita Loureiro</div>
+                                                    <div class="item-text">A Multi-Arcade Emulator Disguised as a Game!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content hip">
+                                                <div class="item-media"><img src="HIP.PNG" width="80">&nbsp;<img src="up.png" width="4" height="75"></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">HiPStore</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">Heaven iPhone Team</div>
+                                                    <div class="item-text">An amazing iOS Installous!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content idos">
+                                                <div class="item-media"><img src="ID.png" width="80">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">iDOS 2</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">Chaoji Li</div>
+                                                    <div class="item-text">A DOS Emulator!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content ifba">
+                                                <div class="item-media"><img src="iFBA.png" width="80">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">iFBA</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">Yohann Magnien</div>
+                                                    <div class="item-text">A Multi-Arcade Emulator!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content itrans">
+                                                <div class="item-media"><img src="ITR.png" width="80">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">iTransmission</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">Andrew Wiik</div>
+                                                    <div class="item-text">An iOS Bittorrent Client!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content mame">
+                                                <div class="item-media"><img src="M4.png" width="80">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">MAME4iOS</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">David Valdeita</div>
+                                                    <div class="item-text">A Multi-Arcade Emulator!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+									<ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content mvc2">
+                                                <div class="item-media"><img src="mvc2.png" width="80">&nbsp;<img src="up.png" width="4" height="75"></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Marvel VS Capcom 2</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">CAPCOM</div>
+                                                    <div class="item-text">An iOS Port of the Arcade Game!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content mcpe">
+                                                <div class="item-media"><img src="MC.png" width="80">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">MCPE Maps</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">Lolilobert Folgen</div>
+                                                    <div class="item-text">Minecraft: Pocket Edition Map Adding App!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content mesnemu">
+                                                <div class="item-media"><img src="MS.png" width="80">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">MeSNEmu</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">Lucas Mendes Menge</div>
+                                                    <div class="item-text">A Super Nintendo Emulator!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content mob">
+                                                <div class="item-media"><img src="MoB.png" width="80">&nbsp;<img src="up.png" width="4" height="75"></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Movie Box</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">Ignat Onego</div>
+                                                    <div class="item-text">A Movie Streaming App!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content mub">
+                                                <div class="item-media"><img src="MuB.png" width="80">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Music Box</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">Peroon</div>
+                                                    <div class="item-text">A Music Streaming/Downloading App!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content mj">
+                                                <div class="item-media"><img src="MJ.png" width="80">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">MusicJunkie</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">@musicjunkieapp</div>
+                                                    <div class="item-text">A Music Streaming/Downloading App!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content nds">
+                                                <div class="item-media"><img src="NDS.png" width="80">&nbsp;<img src="up.png" width="4" height="75"></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">nds4ios</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">InfiniDev</div>
+                                                    <div class="item-text">A Nintendo DS Emulator!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content nes">
+                                                <div class="item-media"><img src="NES.png" width="80">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Nestopia</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">Jonathan Zdziarski</div>
+                                                    <div class="item-text">A Nintendo Entertainment System Emulator!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content pbhd">
+                                                <div class="item-media"><img src="PBHD.png" width="80">&nbsp;<img src="up.png" width="4" height="75"></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">PlayBox HD</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">PlayBox Team</div>
+                                                    <div class="item-text">A Movie Streaming App!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content psp">
+                                                <div class="item-media"><img src="PSP.png" width="80">&nbsp;<img src="up.png" width="4" height="75"></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">PPSSPP</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">PPSSPP Team</div>
+                                                    <div class="item-text">A Playstation Portable Emulator!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content prov8">
+                                                <div class="item-media"><img src="Prov.png" width="80">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Provenance8</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">James Addyman</div>
+                                                    <div class="item-text">A Multi-Emulator!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content prov8103">
+                                                <div class="item-media"><img src="Prov.png" width="80">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">(1.0.3) Provenance8</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">James Addyman</div>
+                                                    <div class="item-text">A Multi-Emulator!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content prov7">
+                                                <div class="item-media"><img src="Prov7.png" width="80">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Provenance7</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">James Addyman</div>
+                                                    <div class="item-text">A Multi SEGA And SNES Emulator!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content rf">
+                                                <div class="item-media"><img src="RF.png" width="80">&nbsp;<img src="up.png" width="4" height="75"></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Remote Files</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">NSoft</div>
+                                                    <div class="item-text">An Online File Manager + SNES Emulator!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content ra2">
+                                                <div class="item-media"><img src="RA2.png" width="80">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">RetroArch 1.0.9.0</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">Libretro</div>
+                                                    <div class="item-text">(Stable) A Multi-Emulator!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content ra">
+                                                <div class="item-media"><img src="RA.png" width="80">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">RetroArch</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">Libretro</div>
+                                                    <div class="item-text">(In-Dev) A Multi-Emulator!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content shou">
+                                                <div class="item-media"><img src="SHOU.png" width="80">&nbsp;<img src="up.png" width="4" height="75"></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Shou</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">Shou.tv</div>
+                                                    <div class="item-text">An iOS Screen Recorder! (7+)</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content sn">
+                                                <div class="item-media"><img src="SN.png" width="80">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">SNES4iOS</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">Riley Testut</div>
+                                                    <div class="item-text">A Super Nintendo Emulator! (iOS 6 Only)</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content s9x">
+                                                <div class="item-media"><img src="s9x.png" width="80">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">SNES9x EX+</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">Explusalpha</div>
+                                                    <div class="item-text">A Super Nintendo Emulator!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content vshare">
+                                                <div class="item-media"><img src="VS.png" width="80">&nbsp;<img src="up.png" width="4" height="75"></div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">vShare</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">vShare</div>
+                                                    <div class="item-text">An AMAZING Installous for iOS!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="item-link item-content ygp">
+                                                <div class="item-media"><img src="ygp.png" width="80">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">YGOPro</div>
+                                                        <div class="item-after">INSTALL</div>
+                                                    </div>
+                                                    <div class="item-subtitle">YGOPro</div>
+                                                    <div class="item-text">A Yu-Gi-Oh Clone for iOS!</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <!-- Ends Here -->
+            <!--------------->
+            <!-- Stars Here ->
+            
+            
+      <!-- Second view (for second wrap)-->
+      
+      <div id="tab3" class="view tab">
+        <!-- We can make with view with navigation, let's add Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="center sliding">Settings And Credit</div>
+          </div>
+        </div>
+        <div class="pages navbar-through">
+          <div data-page="index-2" class="page">
+                    <form data-search-list=".list-block-search" data-search-in=".item-title" class="searchbar searchbar-init">
+			      <div class="searchbar-input">
+			        <input type="search" placeholder="Search"><a href="#" class="searchbar-clear"></a>
+			      </div><a href="#" class="searchbar-cancel">X</a>
+			    </form>
+ 
+			    <!-- Search bar overlay -->
+			    <div class="searchbar-overlay"></div>
+			  
+            <div class="page-content">
+              <div class="content-block tablet-inset searchbar-not-found">
+			       <div class="content-block-inner">Nothing found</div>
+			     </div>
+				 <div class="list-block table-inset list-block-search searchbar-found">
+			<div class="content-block-title">Settings and General</div>
+              <div class="list-block media-list">
+                <ul>
+                  <li><a href="#tab21" class="tab-link item-link item-content active">
+                                                <i class="link"></i>
+                                                <div class="item-media"><img src="img/About Icon.png" width="80" height="100">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">About</div>
+                                                        <div class="item-after button"><font color="#007AFF">GO</font></div>
+                                                    </div>
+                                                    <div class="item-subtitle"></div>
+                                                    <div class="item-text">Find Your App Version And Build Numbers</div>
+                                                </div>
+                                            </a></li>
+                    
+                    <li><a href="#tabsoftwareupdate" class="tab-link item-link item-content active">
+                                                <i class="link"></i>
+                                                <div class="item-media"><img src="img/No Icon.png" width="80" height="100">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Software Update</div>
+                                                        <div class="item-after button"><font color="#007AFF">GO</font></div>
+                                                    </div>
+                                                    <div class="item-subtitle"></div>
+                                                    <div class="item-text">Update Your App And Find New Features</div>
+                                                </div>
+                                            </a></li>
+                    
+                    <li><a href="#tab23" class="tab-link item-link item-content active">
+                                                <i class="link"></i>
+                                                <div class="item-media"><img src="img/Themes Icon.png" width="80" height="100">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Themes And Tint</div>
+                                                        <div class="item-after button"><font color="#007AFF">GO</font></div>
+                                                    </div>
+                                                    <div class="item-subtitle"></div>
+                                                    <div class="item-text">Change Your App Theme And Tint</div>
+                                                </div>
+                                            </a></li>
+                      </ul>
+                      <div class="content-block-title">Credit</div>
+                 <div class="content-block-title">Twitter</div>
+       <div class="list-block inset">
+										<ul class="inset">
+											<li>
+                                                <a href="#" class="item-link item-content HailStoreUpdate-Twitter">
+                                                <div class="item-media"><img src="img/TWIT.png" width="80" height="100">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">HailStore Update Twitter</div>
+                                                        <div class="item-after button"><font color="#007AFF">GO</font></div>
+                                                    </div>
+                                                    <div class="item-subtitle"></div>
+                                                    <div class="item-text">Get Information About HailStore Updates</div>
+                                                </div>
+                                            </a></li>
+                                            <li>
+                                                <a href="#" class="item-link item-content HailStore-Twitter">
+                                                <div class="item-media"><img src="img/TWIT.png" width="80" height="100">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">HailStore Twitter</div>
+                                                        <div class="item-after button"><font color="#007AFF">GO</font></div>
+                                                    </div>
+                                                    <div class="item-subtitle"></div>
+                                                    <div class="item-text">Get Information About HailStore</div>
+                                                </div>
+                                            </a></li>
+                                            <li>
+                                                <a href="#" class="item-link item-content TeamiHackify-Twitter">
+                                                <div class="item-media"><img src="img/TWIT.png" width="80" height="100">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">TeamiHackify Twitter</div>
+                                                        <div class="item-after button"><font color="#007AFF">GO</font></div>
+                                                    </div>
+                                                    <div class="item-subtitle"></div>
+                                                    <div class="item-text">Get Information About TeamiHackify And What Other Projects They Are Working On</div>
+                                                </div>
+                                            </a></li>
+										</ul>
+           <div class="content-block-title">Website</div>
+           <ul><li>
+                                                <a href="#" class="item-link item-content TeamiHackify-Websit1">
+                                                <div class="item-media"><img src="Website%20Icon.png" width="80" height="100">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">TeamiHackify Website</div>
+                                                        <div class="item-after button"><font color="#007AFF">GO</font></div>
+                                                    </div>
+                                                    <div class="item-subtitle"></div>
+                                                    <div class="item-text">TeamiHackify Website Currently Not Finished</div>
+                                                </div>
+                                            </a></li>
+           </ul>
+									</div>
+									
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tab2" class="view tab">
+         <div class="navbar">
+          <div class="navbar-inner">
+            <div class="center sliding">Packages Bundles And Repositories</div>
+          </div>
+        </div>
+        <div class="pages">
+          <div data-page="index-3" class="page">
+            <div class="page-content">
+            <br><br/>
+              <div class="list-block inset">
+               <ul>
+               <li>
+               <a href="#tab20" class="tab-link item-link item-content active">
+                                                <i class="link"></i>
+                                                <div class="item-media"><img src="img/Packages.png" width="80">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Packages</div>
+                                                        <div class="item-subtitle">Search Though Our Large Variety Of Apps And Tweaks<br>                      <span class="badge" id="apps-badge">40</span></div>
+                                                    </div>
+                                                    <div class="item-after button"><font color="#007AFF">GO</font></div>
+                                                    
+                                                </div>
+                                            </a>
+										</li>
+                   <li disabled>
+               <a href="#tab25" class="tab-link item-link item-content active">
+                                                <i class="link"></i>
+                                                <div class="item-media"><img src="img/Packages.png" width="80">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Bundles</div>
+                                                        <div class="item-subtitle">Search Though Our Favourite Apps And Tweaks</div>
+                                                    </div>
+                                                    <div class="item-after button"><font color="#007AFF">GO</font></div>
+                                                    
+                                                </div>
+                                            </a>
+										</li>
+										<li>
+                   <a href="#tab26" class="tab-link item-link item-content active">
+                                                <i class="link"></i>
+                                                <div class="item-media"><img src="img/Packages.png" width="80">&nbsp;&nbsp;</div>
+                                                <div class="item-inner">
+                                                    <div class="item-title-row">
+                                                        <div class="item-title">Repositories</div>
+                                                        <div class="item-subtitle">Add Your Own Repos And Sources And Enjoy HailStore Even More</div>
+                                                    </div>
+                                                    <div class="item-after button"><font color="#007AFF">GO</font></div>
+                                                    
+                                                </div>
+                                            </a>
+										</li>
+									</ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tab4" class="view tab">
+        <div class="pages navbar-fixed">
+          <div data-page="index-4" class="page">
+ 
+			  
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="center">Demo Images</div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="list-block">
+				 <div class="content-block-title">Images</div>
+					   <img src="img/Demo%20Images/iPhone-6-Plus.png" width="400">
+				         </div>
+				 
+              
+              <div class="content-block">
+                <p>Mauris commodo lacus at nisl lacinia, nec facilisis erat rhoncus. Sed eget pharetra nunc. Aenean vitae vehicula massa, sed sagittis ante. Quisque luctus nec velit dictum convallis. Nulla facilisi. Ut sed erat nisi. Donec non dolor massa. Mauris malesuada dolor velit, in suscipit leo consectetur vitae. Duis tempus ligula non eros pretium condimentum. Cras sed dolor odio.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Bottom Tabbar-->
+      <div class="toolbar tabbar tabbar-labels">
+        <div class="toolbar-inner"><a href="#tab1" class="tab-link active"><i class="link"><img src="img/Home.png" height="40" width="40"></i></a><a href="#tab3" class="tab-link"><i class="link"><img src="img/Settings.png" height="40" width="40"></i></a><a href="#tab2" class="tab-link"> <i class="link"><img src="img/Apps.png" height="40" width="40"></i></a><a href="#tab4" class="tab-link"> <i class="link"><img src="img/Info.png" height="40" width="40"></i></a></div>
+      </div>
+      </div>
+       <div class="popup">
+      <div class="view view-popup navbar-fixed">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left"></div>
+            <div class="center sliding">New Task</div>
+            <div class="right"><a href="#" class="link close-popup">Cancel</a></div>
+          </div>
+        </div>
+        <div class="pages">
+          <div class="page">
+            <div class="page-content">
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner"> 
+                        <div class="item-title label">Task</div>
+                        <div class="item-input">
+                          <input type="text" name="title">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <p>Not Working</p>
+                </ul>
+              </div>
+              <div class="content-block"><a href="#" class="button add-task">Add Repo</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Template-->
+    <script id="todo-item-template" type="text/template">
+      <ul>{{#each this}}
+        <li data-color="{{color}}" data-id="{{id}}" class="swipeout">
+          <div class="swipeout-content">
+            <label class="label-checkbox item-content"><input type="checkbox" {{checked}}>
+              <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+              <div class="item-inner">
+                <div class="item-title">{{title}}</div>
+              </div>
+            </label>
+          </div>
+          <div class="swipeout-actions-right"><a href="#" class="swipeout-delete">Delete</a></div>
+        </li>{{/each}}
+      </ul>
+    </script>
+
+
+    
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/framework7.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/HailStore.js"></script>
+<script src="welcomescreen.js"></script>
+
+
+
+
+
+  </body>
+</html>
